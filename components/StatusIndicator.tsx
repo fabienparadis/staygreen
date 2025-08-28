@@ -97,7 +97,7 @@ export function StatusIndicator({
           "rounded-sm w-20 h-8 transition-all duration-300",
           isActive
             ? "bg-[#EEEEEF] hover:bg-[#B9B9BC]/30 text-[#B9B9BC]"
-            : "bg-[#007AFF] hover:bg-[#007AFF]/80 text-white"
+            : "bg-[#007AFF] hover:bg-[#007AFF]/90 text-white"
         )}
       >
         {isLoading ? (

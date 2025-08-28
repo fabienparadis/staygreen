@@ -59,7 +59,8 @@ function createWindow() {
     mainWindow.loadURL("http://localhost:3000");
     mainWindow.webContents.openDevTools();
   } else {
-    mainWindow.loadFile(path.join(__dirname, "../out/index.html"));
+    // In packaged app, load from the app bundle
+    mainWindow.loadFile(path.join(__dirname, "..", "out", "index.html"));
   }
 
   // Show window when ready

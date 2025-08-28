@@ -1,0 +1,32 @@
+{
+  "appId": "com.staygreen.app",
+  "productName": "Stay Green",
+  "directories": {
+    "output": "dist"
+  },
+  "files": ["out/**/*", "electron/**/*", "node_modules/**/*", "package.json"],
+  "extraResources": [
+    {
+      "from": "electron/scripts",
+      "to": "scripts"
+    }
+  ],
+  "win": {
+    "target": "nsis",
+    "icon": "public/icons/app-icon.ico"
+  },
+  "mac": {
+    "target": "dmg",
+    "icon": "public/icons/app-icon.icns"
+  },
+  "linux": {
+    "target": "AppImage",
+    "icon": "public/icons/app-icon.png"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
+  }
+}

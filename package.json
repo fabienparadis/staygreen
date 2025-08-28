@@ -2,6 +2,9 @@
   "name": "staygreen",
   "version": "0.1.0",
   "private": true,
+  "description": "Stay Green desktop app - keep your status active (Windows/macOS)",
+  "author": "StayGreen",
+  "main": "electron/main.js",
   "scripts": {
     "dev": "next dev -p 3000 --turbopack",
     "build": "next build --turbopack",

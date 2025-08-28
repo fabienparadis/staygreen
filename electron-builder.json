@@ -6,10 +6,9 @@
   },
   "files": ["out/**/*", "electron/**/*", "node_modules/**/*", "package.json"],
   "extraResources": [
-    {
-      "from": "electron/scripts",
-      "to": "scripts"
-    }
+    { "from": "electron/scripts", "to": "scripts" },
+    { "from": "public/tray-icons", "to": "tray-icons" },
+    { "from": "public/icons", "to": "icons" }
   ],
   "win": {
     "target": "nsis",
